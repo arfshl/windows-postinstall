@@ -1,4 +1,4 @@
-# windows-postinstall
+# Windows Post-Install scripts
 
 Windows equivalent of linux-postinstall, Easy post-fresh-install script for Windows 10+, not including device drivers.
 
