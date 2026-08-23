@@ -26,10 +26,8 @@ $ErrorActionPreference = 'Stop'
 $coreAppsList = @(
     "7zip.7zip",
     "VideoLAN.VLC",
-    "AOMEI.PartitionAssistant",
     "Microsoft.EdgeWebView2Runtime",
-    "LocalSend.LocalSend",
-    "PowerSoftware.AnyBurn"
+    "Zoom.Zoom"
 )
 
 # func: show help message
@@ -41,7 +39,7 @@ Must be run in an elevated PowerShell Administrator session.
 
 options:
   -h, -Help             Show this help message and exit
-  -CoreApps             Install core applications ($coreAppsFormatted)
+  -CoreApps             Install core applications
   -MsvcRedist           Download and install Visual C++ Redistributable AIO from GitHub
   -Chrome               Install Google Chrome browser
   -Firefox              Install Mozilla Firefox browser
@@ -56,7 +54,8 @@ options:
   -WhatIf               Dry-run mode (simulate execution without installing)
 
 Usage example:
-  .\windows-postinstall.ps1 -CoreApps -MsvcRedist -FirefoxDev -AddApps Microsoft.VisualStudioCode,Git.Git
+  .\windows-postinstall.ps1 -CoreApps -MsvcRedist -Chrome # Recomendded
+  .\windows-postinstall.ps1 -CoreApps -MsvcRedist -FirefoxDev -AddApps Microsoft.VisualStudioCode,Git.Git,AOMEI.PartitionAssistant,LocalSend.LocalSend,PowerSoftware.AnyBurn # My setup
 "@
     Write-Host $helpText
 }
