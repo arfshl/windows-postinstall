@@ -24,10 +24,11 @@ $ErrorActionPreference = 'Stop'
 
 # coreapps list
 $coreAppsList = @(
-    "7zip.7zip",
+    "Giorgiotani.Peazip",
     "VideoLAN.VLC",
     "Microsoft.EdgeWebView2Runtime",
-    "Zoom.Zoom"
+    "Zoom.Zoom",
+    
 )
 
 # func: show help message
