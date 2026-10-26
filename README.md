@@ -68,3 +68,7 @@ Usage example:
 - explorer-disable-new-context-menu.reg - Disable Windows 11 new Explorer context menu
 
 - explorer-enable-new-context-menu.reg - Re-Enable Windows 11 new Explorer context menu
+
+- fix-ncsi-nointernet.reg - fix for "no internet" hangs on wifi
+
+- undo-fix-ncsi-nointernet.reg - undo fix for "no internet" hangs on wifi
